@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Android: Assemble Debug",
+      "type": "shell",
+      "command": ".\\gradlew.bat",
+      "args": [
+        "assembleDebug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Android: Install Debug",
+      "type": "shell",
+      "command": ".\\gradlew.bat",
+      "args": [
+        "installDebug"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

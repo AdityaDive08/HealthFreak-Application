@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HealthFreak</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="doctor_illustration">Doctor Illustration</string>
+    <string name="ai_voice_agent">Your AI Medical Voice Agent</string>
+    <string name="ai_description">Instant health insights powered by AI.</string>
+    <string name="consult_doctor">Consult a Doctor</string>
+    <string name="quick_access">Quick Access</string>
+    <string name="health_tracker">Health Tracker</string>
+    <string name="sos_alert">SOS Alert</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="first_aid">First Aid</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="no_consultations">No Recent Consultations</string>
+</resources>

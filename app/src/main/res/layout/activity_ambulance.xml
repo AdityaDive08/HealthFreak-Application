@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF4FF"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="#D00000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🚨 Emergency Ambulance"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#D00000"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Full Name"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <Spinner
+            android:id="@+id/spinnerEmergencyType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="Detecting location..."
+            android:background="#FFF9CC"
+            android:textColor="#6B6B00"
+            android:layout_marginTop="10dp" />
+
+        <!-- Main Request button (Call + SMS) -->
+        <Button
+            android:id="@+id/btnRequestAmbulance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Request Ambulance"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1D4ED8"
+            android:layout_marginTop="18dp" />
+
+        <!-- Extra features row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnWhatsAppSOS"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="WhatsApp SOS"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#25D366" />
+
+            <Button
+                android:id="@+id/btnVoiceSOS"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="🎙 Voice SOS"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#7C3AED" />
+        </LinearLayout>
+
+        <!-- Extra features row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnOpenMap"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="Nearest Hospital Map"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#059669" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Tip: Press Volume Up 3 times for Panic SOS (while on this screen)"
+                android:textSize="11sp"
+                android:textColor="#555" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need immediate help? Call 108"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
