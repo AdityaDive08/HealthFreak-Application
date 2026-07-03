@@ -28,26 +28,5 @@ This repository contains the **Frontend (Android)** application built in Kotlin.
 *   **UI Components:** Material Design 3, MPAndroidChart (for data visualization)
 *   **Concurrency:** Kotlin Coroutines
 
-## 🔒 Setup & Configuration (For Developers)
-
-To run this project locally, you must provide your own API keys and configure the backend connection. These are intentionally omitted from version control for security.
-
-1.  **Clone the Repository**
-    ```bash
-    git clone https://github.com/AdityaDive08/HealthFreak-Application.git
-    ```
-2.  **Configure `local.properties`**
-    Navigate to the root directory of the Android project and open (or create) the `local.properties` file. Add the following lines:
-    ```properties
-    # Your Google Gemini API Key
-    GEMINI_API_KEY=your_gemini_api_key_here
-
-    # Your Local or Production Node.js Backend URL (must include trailing slash)
-    BACKEND_BASE_URL=http://192.168.x.x:3000/
-    ```
-    *Note: The `local.properties` file is git-ignored to prevent leaking credentials.*
-3.  **Build and Run**
-    Sync the project with Gradle files and run it on an Android Emulator or physical device.
-
 ---
 *Note: This repository only contains the Android frontend. The backend server (Node.js/MySQL) is hosted and managed separately.*
